@@ -1,5 +1,8 @@
 ## Stout Developer Guide
 
+[![Build Status](https://travis-ci.org/euskadi31/stout-cpp.svg)](https://travis-ci.org/euskadi31/stout-cpp)
+
+
 Stout is a header-only C++ library. Simply add the `include` folder to your include path (i.e., `-I/path/to/stout/include`) during compilation (eventually we plan to support installation).
 
 > NOTE: Depending on which headers you'd like to use, you may require the following third party libraries:
@@ -8,6 +11,7 @@ Stout is a header-only C++ library. Simply add the `include` folder to your incl
 >  - Google's glog (this dependency will be removed in the future)
 >  - Google's protobuf (version 2.5.0 is required to run tests)
 >  - Google's gmock/gtest
+>  - Picojson (version 1.3.0)
 
 There are a handful of data structures provided within the library (including some collections), as well as some namespaced and miscellaneous utilities. Also included are abstractions for [command line flags](#flags).
 
