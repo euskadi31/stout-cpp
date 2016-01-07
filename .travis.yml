@@ -7,7 +7,7 @@ compiler:
 before_install:
     - sudo apt-get update -q
 install:
-    - sudo apt install apr apr-util subversion boost1.55 protobuf google-glog gtest google-mock -y
+    - sudo apt install libapr1-dev libaprutil1-dev libsvn-dev libboost1.55-all-dev libprotobuf-dev libgoogle-glog-dev libgtest-dev google-mock -y
     - wget https://raw.githubusercontent.com/kazuho/picojson/v1.3.0/picojson.h
     - sudo cp picojson.h /usr/locale/include/picojson.h
 before_script:
